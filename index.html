@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найти ближайшее метро</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Найти ближайшее метро</h1>
+        <form id="address-form" onsubmit="event.preventDefault(); findNearestMetro();">
+            <label for="address">Ваш адрес:</label>
+            <input type="text" id="address" name="address" required>
+            <button type="submit">Найти</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
